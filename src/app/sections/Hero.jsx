@@ -8,9 +8,9 @@ import SocialMediaItem from '../components/SocialMediaItem'
 
 export const Hero = () => {
   return (
-    <div className='flex flex-col justify-normal md:flex-row items-center md:justify-center  '>
+    <div className='flex flex-col justify-normal md:flex-row items-center  md:justify-center border-dotted border-red-500 border-2'>
       <div
-        className="relative w-[298px] h-[298px] xl:w-[298px] xl:h-[298px] md:mr-8 mb-8 md:mb-0 "
+        className="relative w-[298px] h-[298px] xl:w-[398px] xl:h-[398px] md:mr-8 mb-8 md:mb-0 "
       >
         <Image
           priority
@@ -21,7 +21,7 @@ export const Hero = () => {
         />
       </div>
 
-      <div className="text-center md:text-left">
+      <div className="text-center md:text-left" >
         <h1 className="font-bold text-5xl sm:text-6xl mb-3 tracking-tight text-gray-800 dark:text-white block">
           Hola
         </h1>
@@ -35,11 +35,11 @@ export const Hero = () => {
           {/* Icons social medias */}
           <div className='flex flex-row gap-3 items-center'>
             <SocialMediaItem href={'https://github.com/Kevinduran09'}  >
-              <Github className='size-6' />
+              <Github className='size-3 xl:size-6' />
               <span>GitHub</span>
             </SocialMediaItem>
             <SocialMediaItem href={'https://www.linkedin.com/in/kevin-durán-martínez-1b6868151/'} >
-              <LinkedIn className='size-6' />
+              <LinkedIn className='size-3 xl:size-6' />
               <span>LinkedIn</span>
             </SocialMediaItem>
             {/* <SocialMediaItem href={'https://www.threads.net/@ardm_kv?hl=es-la'}  >
