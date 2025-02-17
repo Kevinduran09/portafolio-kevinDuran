@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
 import { Header } from "./sections/Header";
-import { Rubik } from 'next/font/google'
+
 import AboutMe from "./sections/AboutMe";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
@@ -13,25 +13,16 @@ export const metadata = {
   description: 'Estudiante de ingenieria en sistemas, desarrollador y programador, creador de aplicacion y soluciones de software',
 }
 
-const rubik = Rubik({
-  subsets: ["latin"]
-})
+
 export default function Home() {
 
 
   return (
 
-    <div className={` ${rubik.className}`} >
-      {/* <Header />
-      <HomePage />
-      <Projects />
-      <AboutMe />
-      <Contact />
-      <Footer /> */}
+    <>
 
-      
 
-      <Section id={'home'} className={'h-screen flex flex-col justify-center items-center'}>
+      <Section id={'home'} className={'py-16'}>
         <Hero />
       </Section>
       <Section id="projects">
@@ -43,6 +34,6 @@ export default function Home() {
       <Section id="experience" className={'mt-4'}>
         <Experience />
       </Section>
-    </div>
+    </>
   );
 }

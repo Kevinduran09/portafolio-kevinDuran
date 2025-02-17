@@ -65,16 +65,12 @@ export const Header = () => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
-            if (currentScrollY > lastScrollY && currentScrollY > 50) {
-                console.log('fdslfdl');
-
-
+            if (currentScrollY > lastScrollY && currentScrollY > 400) {  
                 setIsVisible(false);
-            } else {
-
+            } else if (currentScrollY < 400) {
                 setIsVisible(true);
             }
-
+            
             setLastScrollY(currentScrollY);
         };
 
@@ -87,15 +83,15 @@ export const Header = () => {
 
     return (
 
-        <header className={`py-4 flex justify-center  items-center fixed top-0 left-0 z-[100] w-full ransition-transform duration-300 ease-in-out  ${isVisible ? 'translate-y-0' : '-translate-y-full '} `}
+        <header className={`py-4 flex justify-center  items-center fixed top-0 left-0 z-[100] w-full ransition-transform duration-300 ease-in-out  `}
 
         >
             <nav>
-                <ul className="bg-[#413f3fec] flex gap-4 rounded-full py-1 px-2">
+                <ul className={`${isVisible ? '' : 'bg-[#413f3fec] rounded-full'}  flex gap-4 py-1 px-2`}>
                     {
                         navItems.map((item)=>(
                             <li key={item.name}>
-                                <a href={item.url} className={`text-lg sm:text-1xl hover:text-violet-800 hover:underline duration-500 ease-in-out ${activeSection == item.label ? 'text-violet-800 font-bold' : 'text-white'}`}
+                                <a href={item.url} className={`text-sm sm:text-lg hover:text-violet-800 hover:underline duration-500 ease-in-out ${activeSection == item.label ? 'text-violet-800 font-bold' : 'text-white'}`}
                                 
                                 >{item.name}</a>
                             </li>

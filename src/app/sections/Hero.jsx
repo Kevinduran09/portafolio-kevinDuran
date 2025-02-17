@@ -8,7 +8,8 @@ import SocialMediaItem from '../components/SocialMediaItem'
 
 export const Hero = () => {
   return (
-    <div className='flex flex-col justify-normal md:flex-row items-center  md:justify-center '>
+    // h-screen flex flex-col justify-center items-center
+    <div className='h- md:h-screen flex flex-col justify-normal md:flex-row items-center  md:justify-center '>
       <div
         className="relative w-[298px] h-[298px] xl:w-[398px] xl:h-[398px] md:mr-8 mb-8 md:mb-0 "
       >
@@ -16,7 +17,7 @@ export const Hero = () => {
           priority
           fill
           src={ProfileImage}
-          alt="Imagen de perfil"
+          alt="Kevin Durán"
           className='object-contain rounded-full'
         />
       </div>
