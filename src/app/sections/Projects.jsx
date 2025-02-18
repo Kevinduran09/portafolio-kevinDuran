@@ -1,12 +1,10 @@
-"use client";
 
 import Image from "next/image"
 import '@/app/styles/Projects.css'
 import cloudBox from '@/images/cloud-box.webp';
 // import { projects } from '@/mucks/projects';
 
-
-import { FastAPI, MySQL, NestJS, Python, React, TailwindCSS, Laravel } from '@/app/utils/icons';
+import { FastAPI, MySQL, NestJS, Python, React, TailwindCSS, Laravel, Website} from '@/app/utils/icons';
 import { Github } from '@/app/utils/icons';
 // import { TAGS } from './tags';
 
@@ -56,32 +54,24 @@ export const projects = [
     tecnologies: [
       TAGS.React, TAGS.NestJS, TAGS.MySQL
     ],
-    links: [
-      {
-        icon: Github,
-        nameLink: 'Ver más',
-        url: ''
-      },
-      {
-        nameLink: 'Github',
-        url: ''
-      }]
+   
   },
   {
     name: 'Proyecto Remesas Yabi',
     imageUrl: cloudBox,
-    description: "Proyecto de sistema de remesas para la empresa Yabi, desarrollado como un proyecto de curso universitario. Permitia la administración de remesas, clientes, empleados y trasportes. Ademas de visualización rutas en mapa.",
+    description: "Proyecto de sistema de remesas para la empresa Yabi, desarrollado como un proyecto de curso universitario. Permite la administración de remesas, clientes, empleados y trasportes. Ademas de visualización rutas en mapa.",
     tecnologies: [
       TAGS.React, TAGS.Laravel, TAGS.MySQL
     ],
     links: [
       {
         icon: Github,
-        nameLink: 'Ver más',
+        nameLink: 'Ver Github',
         url: ''
       },
       {
-        nameLink: 'Github',
+        icon: Website,
+        nameLink: 'Live',
         url: ''
       }]
   },
@@ -109,10 +99,10 @@ const ProjectCard = ({ project }) => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-[#27487b] py-2 px-4 rounded-md text-sm hover:bg-gray-600 hover:scale-105 transition-transform duration-300"
               >
+                {link.nameLink}
                 {link?.icon && (
                   <link.icon className='size-4' />
                 )}
-                {link.nameLink}
               </a>
             ))}
           </div>
@@ -135,7 +125,7 @@ const ProjectCard = ({ project }) => {
             </li>
           ))}
         </ul>
-        <p className="text-lg text-justify mt-5 text-gray-700 dark:text-gray-400">{project.description}</p>
+        <p className="text-lg text-justify mt-5 text-gray-300">{project.description}</p>
 
       </div>
     </div>
@@ -145,9 +135,9 @@ const ProjectCard = ({ project }) => {
 
 export const Projects = () => {
   return (
-    <div  className="p-4">
+    <div  className="p-2">
       <div className='w-full flex flex-col items-center'>
-        <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white ">
+        <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3  ">
           <svg xmlns="http://www.w3.org/2000/svg" className='size-8 icon icon-tabler icons-tabler-outline icon-tabler-code' width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
           Proyectos
         </h2>

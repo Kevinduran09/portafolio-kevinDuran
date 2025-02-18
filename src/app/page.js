@@ -22,10 +22,10 @@ export default function Home() {
     <>
 
 
-      <Section id={'home'} className={'py-16'}>
+      <Section id={'home'} className={'py-16 md:py-0 '}>
         <Hero />
       </Section>
-      <Section id="projects">
+      <Section id="projects" >
         <Projects />
       </Section>
       <Section id="aboutme" className={'mt-4'} >

@@ -1,32 +1,32 @@
-'use client'
 
 import Image from 'next/image'
 import React from 'react'
 import ProfileImage from '@/images/ProfileImage.webp'
+import KevinDuran from '@/images/KevinDuran.webp'
 import { Github, LinkedIn, Threads, Mail } from '../utils/icons';
 import SocialMediaItem from '../components/SocialMediaItem'
 
 export const Hero = () => {
   return (
     // h-screen flex flex-col justify-center items-center
-    <div className='h- md:h-screen flex flex-col justify-normal md:flex-row items-center  md:justify-center '>
+    <div className=' md:h-screen flex flex-col justify-normal md:flex-row items-center  md:justify-center '>
       <div
         className="relative w-[298px] h-[298px] xl:w-[398px] xl:h-[398px] md:mr-8 mb-8 md:mb-0 "
       >
         <Image
           priority
           fill
-          src={ProfileImage}
+          src={KevinDuran}
           alt="Kevin Durán"
-          className='object-contain rounded-full'
+          className='object-contain rounded-full '
         />
       </div>
 
       <div className="text-center md:text-left" >
-        <h1 className="font-bold text-5xl sm:text-6xl mb-3 tracking-tight text-gray-800 dark:text-white block">
+        <h1 className="font-bold text-5xl sm:text-6xl mb-3 tracking-tight  block">
           Hola
         </h1>
-        <h2 className='font-bold text-4xl sm:text-5xl mb-3 tracking-tight text-gray-800 dark:text-white block'>
+        <h2 className='font-bold text-4xl sm:text-5xl mb-3 tracking-tight  block'>
           Soy
           <span className="text-fuchsia-600"> Kevin Durán</span>
         </h2>
