@@ -12,6 +12,8 @@ body {
 
 html{
   scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scrollbar-width: thin;
 }
 .wrapper{
 

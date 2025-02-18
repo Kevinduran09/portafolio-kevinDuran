@@ -22,7 +22,7 @@ export default function Home() {
     <>
 
 
-      <Section id={'home'} className={'py-16 md:py-0 '}>
+      <Section id={'home'} className={'pt-20 pb-8 md:py-0 '}>
         <Hero />
       </Section>
       <Section id="projects" >
@@ -33,6 +33,9 @@ export default function Home() {
       </Section>
       <Section id="experience" className={'mt-4'}>
         <Experience />
+      </Section>
+      <Section id="contact" className={'mt-4'}>
+        <Contact />
       </Section>
     </>
   );

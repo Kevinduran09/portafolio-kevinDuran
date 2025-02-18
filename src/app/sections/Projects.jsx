@@ -4,7 +4,7 @@ import '@/app/styles/Projects.css'
 import cloudBox from '@/images/cloud-box.webp';
 // import { projects } from '@/mucks/projects';
 
-import { FastAPI, MySQL, NestJS, Python, React, TailwindCSS, Laravel, Website} from '@/app/utils/icons';
+import { FastAPI, MySQL, NestJS, Python, React, TailwindCSS, Laravel, Website } from '@/app/utils/icons';
 import { Github } from '@/app/utils/icons';
 // import { TAGS } from './tags';
 
@@ -54,7 +54,7 @@ export const projects = [
     tecnologies: [
       TAGS.React, TAGS.NestJS, TAGS.MySQL
     ],
-   
+
   },
   {
     name: 'Proyecto Remesas Yabi',
@@ -108,7 +108,7 @@ const ProjectCard = ({ project }) => {
           </div>
         </picture>
       </div>
- 
+
 
       <div className=" w-full md:w-1/2 md:max-w-lg gap-5 ">
 
@@ -135,13 +135,13 @@ const ProjectCard = ({ project }) => {
 
 export const Projects = () => {
   return (
-    <div  className="p-2">
-      <div className='w-full flex flex-col items-center'>
-        <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3  ">
-          <svg xmlns="http://www.w3.org/2000/svg" className='size-8 icon icon-tabler icons-tabler-outline icon-tabler-code' width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
-          Proyectos
-        </h2>
-      </div>
+    <div className="p-2">
+
+      <h2 className="w-full justify-center flex items-center gap-x-3 text-4xl font-semibold text-center my-5 ">
+        <svg xmlns="http://www.w3.org/2000/svg" className='size-8 icon icon-tabler icons-tabler-outline icon-tabler-code' width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
+        Proyectos
+      </h2>
+
       <div className="projects">
         {projects.map((project, index) => (
           <ProjectCard key={project.name} project={project} />
