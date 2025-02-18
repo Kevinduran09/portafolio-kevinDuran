@@ -6,7 +6,7 @@ import { Header } from "./sections/Header";
 import AboutMe from "./sections/AboutMe";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
-import { Section } from "./sections/Section";
+import { Section } from "./components/Section";
 import { Experience } from "./sections/Experience";
 export const metadata = {
   title: 'Portafolio de KEVIN DURAN | Desarrollador y Programador, Costa Rica. ',
