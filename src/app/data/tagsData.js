@@ -1,4 +1,4 @@
-import { FastAPI, MySQL, NestJS, Python, React, TailwindCSS, Laravel } from '@/app/utils/icons';
+import { FastAPI, MySQL, NestJS, Python, React, TailwindCSS, Laravel, MicrosoftSQLServer,Angular } from '@/app/utils/icons';
 
 export const TAGS = {
     React: {
@@ -36,4 +36,14 @@ export const TAGS = {
         className: 'bg-[#831f37] text-white',
         icon: Laravel
     },
+    SqlServer:{
+        name: 'SQLServer',
+        className: 'bg-[#066a97] text-white',
+        icon: MicrosoftSQLServer
+    },
+    Angular:{
+        name: 'Angular',
+        className: 'bg-[#7b163c] text-white',
+        icon: Angular
+    }
 };

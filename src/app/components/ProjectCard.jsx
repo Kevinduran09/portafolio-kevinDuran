@@ -4,14 +4,14 @@ import cloudBox from '@/images/cloud-box.webp';
 
 export const ProjectCard = ({ project }) => {
     return (
-        <div className=" flex flex-col md:flex-row gap-4 p-2 rounded-lg ">
+        <div className=" flex flex-col md:flex-row gap-4 p-2 rounded-lg items-center ">
             {/* Imagen del proyecto */}
             <div className=" w-full md:w-1/2">
                 <picture className='relative group flex flex-col items-center transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl  md:group-hover:shadow-2xl '>
                     <Image
-                        src={cloudBox}
-                        alt='Imagen del proyecto'
-                        className='object-cover object-top w-full h-56 transition duration-500 sm:h-full  md:group-hover:scale-105'
+                        src={project.imageUrl}
+                        alt='Imagen del proyecto '
+                        className='object-cover object-top w-full h-56 transition duration-500 sm:h-full  md:group-hover:scale-105 '
                     />
                     <div className="absolute bottom-0 right-0 m-2 flex flex-row gap-3">
                         {project.links?.map((link, index) => (

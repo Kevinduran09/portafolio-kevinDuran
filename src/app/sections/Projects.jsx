@@ -16,7 +16,7 @@ export const Projects = () => {
                 ))}
             </div>
             <div className="w'ful flex justify-center items-center p-3">
-                <a href="https://github.com/Kevinduran09" className=" hover:text-fuchsia-500">Ver más</a>
+                <a href="https://github.com/Kevinduran09" className=" hover:text-fuchsia-500 ">Ver más proyectos</a>
             </div>
         </div>
     )

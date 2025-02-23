@@ -8,6 +8,8 @@ import SocialMediaItem from '../components/SocialMediaItem'
 import { TypedText } from '../components/TypedText';
 
 export const Hero = () => {
+
+
   return (
     <div className=' md:h-screen flex flex-col justify-normal md:flex-row items-center  md:justify-center '>
       <div
@@ -32,7 +34,7 @@ export const Hero = () => {
         </h2>
         <TypedText className={'text-4xl sm:text-4xl text-fuchsia-600'} />
 
-        <div className='flex flex-row py-2 mt-6 items-center gap-5 justify-between'>
+        <div className='flex flex-row py-2 mt-6 items-center gap-5 justify-center md:justify-between'>
           <div className='flex flex-row gap-3 items-center'>
             <SocialMediaItem href={'https://github.com/Kevinduran09'}  >
               <Github className='size-3 xl:size-6' />

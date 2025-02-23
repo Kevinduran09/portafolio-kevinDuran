@@ -28,6 +28,11 @@ export const Header = () => {
     const [activeSection, setActiveSection] = useState('');
     const [themeToggle, setthemeToggle] = useState('light');
 
+    const handleScrollSection = (e, id) => {
+        e.preventDefault()
+        const section = document.querySelector(id)
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
     useEffect(() => {
         const hanleSectionScroll = ()=>{
             const sections = document.querySelectorAll('section');
@@ -87,7 +92,7 @@ export const Header = () => {
                     {
                         navItems.map((item)=>(
                             <li key={item.name}>
-                                <a href={item.url} className={`text-sm sm:text-lg hover:text-violet-800 hover:underline duration-500 ease-in-out ${activeSection == item.label ? 'text-violet-800 font-bold' : 'text-white'}`}
+                                <a href={item.url} onClick={(e) => handleScrollSection(e,item.url)} className={`text-sm sm:text-lg hover:text-violet-800 hover:underline duration-500 ease-in-out ${activeSection == item.label ? 'text-violet-800 font-bold' : 'text-white'}`}
                                 
                                 >{item.name}</a>
                             </li>
