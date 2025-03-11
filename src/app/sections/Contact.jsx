@@ -1,11 +1,16 @@
 'use client'
 import React, { useState } from 'react'
+import { data } from '../data/data';
 
 export default function Contact() {
   const [tooltipVisible, setTooltipVisible] = useState(false);
-  const emailAdress = 'kevinduran.net.123@gmail.com';
+  const { Personal_Information } = data
+  const emailAdress = Personal_Information.email;
 
   const copyToClipboard = async () => {
+
+  
+
     try {
       await navigator.clipboard.writeText(emailAdress);
       setTooltipVisible(true);

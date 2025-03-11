@@ -32,6 +32,8 @@ export const Header = () => {
         e.preventDefault()
         const section = document.querySelector(id)
         section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+        
     }
     useEffect(() => {
         const hanleSectionScroll = ()=>{
@@ -45,16 +47,16 @@ export const Header = () => {
                 entries.forEach((entry)=>{
                     if (entry.isIntersecting) {
                         setActiveSection(entry.target.id)
-                        console.log(entry);
+                        
 
                     }
                 })
                 
             }
-
+            const rootMargin = window.innerWidth <= 768 ? '0px 0px -50% 0px' : '0px 0px -20% 0px';
             const observer = new IntersectionObserver(callback,{
                 root:null,
-                rootMargin:'0px',
+                rootMargin,
                 threshold:0.6
             })
 
@@ -84,7 +86,7 @@ export const Header = () => {
 
     return (
 
-        <header className={`py-4 flex justify-center  items-center fixed top-0 left-0 z-[100] w-full duration-1000 ease-in-out  transition-all ${isVisible ? '' :'backdrop-blur-sm bg-black/45 '}`}
+        <header className={`py-4 flex justify-center  items-center fixed top-0 left-0 z-[100] w-full duration-1000 ease-in-out  transition-all ${isVisible ? '' :'backdrop-blur-sm bg-black/30  '}`}
 
         >
             <nav className='flex justify-center items-center'>
@@ -100,7 +102,7 @@ export const Header = () => {
                     }
                     
                 </ul>
-                <button className="ms-2 mt-1" onClick={() => setthemeToggle(themeToggle === 'light' ? 'dark' : 'light')} >
+                {/* <button className="ms-2 mt-1" onClick={() => setthemeToggle(themeToggle === 'light' ? 'dark' : 'light')} >
                     {
                         themeToggle === 'light' ?
                         (
@@ -112,7 +114,7 @@ export const Header = () => {
                         )
                     }
                     
-                </button>
+                </button> */}
 
             </nav>
         </header>

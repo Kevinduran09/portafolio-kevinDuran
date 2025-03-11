@@ -1,9 +1,11 @@
 
 import '@/app/styles/Projects.css'
-import { projects } from '../data/projectsData';
 import { ProjectCard } from '../components/ProjectCard';
+import { data } from '../data/data';
+
 
 export const Projects = () => {
+    const { projects } = data;
     return (
         <div className="p-2">
             <h2 className="w-full justify-center flex items-center gap-x-3 text-4xl font-semibold text-center my-5 ">

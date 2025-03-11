@@ -1,8 +1,10 @@
 import React from 'react'
-import { EDUCATION } from '../data/educationData';
+
 import { ExperienceItem } from '../components/ExperienceItem';
+import { data } from '../data/data';
 
 export const Experience = () => {
+    const { experience } = data
     return (
         <div className="p-5">
             <h2 className='w-full flex justify-center items-center gap-x-3 text-4xl font-semibold my-6 text-center'>
@@ -11,7 +13,7 @@ export const Experience = () => {
             </h2>
             <div className=''>
                 <ol className="relative border-s-2 border-gray-700">
-                    {EDUCATION.map((education, index) => (
+                    {experience.map((education, index) => (
                         <li className="mb-10 ms-6" key={index}>
                             <ExperienceItem key={education.courseName} {...education} />
                         </li>

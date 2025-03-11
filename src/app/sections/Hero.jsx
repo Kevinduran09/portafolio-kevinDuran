@@ -1,13 +1,17 @@
 
 import Image from 'next/image'
 import React from 'react'
-import ProfileImage from '@/images/ProfileImage.webp'
-import KevinDuran from '@/images/KevinDuran.webp'
-import { Github, LinkedIn, Threads, Mail } from '../utils/icons';
+
+
+import { Github, LinkedIn, Mail } from '../utils/icons';
 import SocialMediaItem from '../components/SocialMediaItem'
 import { TypedText } from '../components/TypedText';
+import { data } from '../data/data';
 
-export const Hero = () => {
+export const Hero = async () => {
+
+  const { Personal_Information } = data;
+  
 
 
   return (
@@ -18,7 +22,7 @@ export const Hero = () => {
         <Image
           priority
           fill
-          src={KevinDuran}
+          src='/KevinDuran.webp'
           alt="Kevin Durán"
           className='object-contain rounded-full '
         />
@@ -30,21 +34,21 @@ export const Hero = () => {
         </h1>
         <h2 className='font-bold text-4xl sm:text-5xl mb-3 tracking-tight  block'>
           Soy
-          <span className="text-fuchsia-600"> Kevin Durán</span>
+          <span className="text-fuchsia-600"> {Personal_Information.name}</span>
         </h2>
-        <TypedText className={'text-4xl sm:text-4xl text-fuchsia-600'} />
+        <TypedText className={'text-4xl sm:text-4xl text-fuchsia-600'} datalist={Personal_Information.titles}/>
 
         <div className='flex flex-row py-2 mt-6 items-center gap-5 justify-center md:justify-between'>
           <div className='flex flex-row gap-3 items-center'>
-            <SocialMediaItem href={'https://github.com/Kevinduran09'}  >
+            <SocialMediaItem href={'https://github.com/Kevinduran09'} className={'bg-gray-800  hover:bg-gray-700 '} >
               <Github className='size-3 xl:size-6' />
               <span>GitHub</span>
             </SocialMediaItem>
-            <SocialMediaItem href={'https://www.linkedin.com/in/kevin-durán-martínez-1b6868151/'} >
+            <SocialMediaItem href={Personal_Information.linkedin} className={'bg-gray-800  hover:bg-gray-700 '} >
               <LinkedIn className='size-3 xl:size-6' />
               <span>LinkedIn</span>
             </SocialMediaItem>
-            <SocialMediaItem href={'mailto:kevinduran.net.123@gmail.com'} className={' !bg-fuchsia-700'} >
+            <SocialMediaItem href={`mailto:${Personal_Information.email}`} className={'bg-fuchsia-700 hover:bg-fuchsia-600'} >
               <span>Contactame</span>
               <Mail className="size-6" />
             </SocialMediaItem>

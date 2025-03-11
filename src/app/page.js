@@ -25,16 +25,16 @@ export default function Home() {
       <Section id={'home'} className={'pt-20 pb-8 md:py-0 '}>
         <Hero />
       </Section>
-      <Section id="projects" >
+      <Section id="projects">
         <Projects />
       </Section>
-      <Section id="aboutme" className={'mt-4'} >
+      <Section id="aboutme" className={'my-16'} >
         <AboutMe />
       </Section>
-      <Section id="experience" className={'mt-4'}>
+      <Section id="experience" className={'my-16'}>
         <Experience />
       </Section>
-      <Section id="contact" className={'mt-4'}>
+      <Section id="contact" className={'my-16'}>
         <Contact />
       </Section>
     </>
