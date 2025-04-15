@@ -13,10 +13,10 @@ export default function AboutMe() {
             </h2>
 
             <div className='px-6'>
-                <p className='text-lg  leading-7 tracking-wider  mb-4'>
+                <p className='text-lg text-justify leading-7 tracking-wider  mb-4'>
                     Soy Kevin Andrey Durán Martínez, estudiante de ingeniería en sistemas de información y desarrollador de software. Apasionado por la tecnología y el desarrollo de soluciones tecnológicas. <span className='text-fuchsia-500'>Siempre en continuo aprendizaje buscando nuevos retos y oportunidades para mejorar mis conocimientos.</span>
                 </p>
-                <p className='text-lg  leading-7  tracking-wider mb-4'>
+                <p className='text-lg  text-justify   leading-7  tracking-wider mb-4'>
                     Cuento con experiencia en diversas tecnologías y herramientas de desarrollo de software que me permiten construir soluciones modernas y solidas. <span className='text-fuchsia-500'>Con experiencia en proyectos reales</span>, he participado en el desarrollo de MYPIMES, una aplicación para la organización CEMEDE que <span className='text-fuchsia-500'>soluciona una problemática ante el control de las pymes dentro del territorio de Costa Rica.  </span>
                 </p>
                 

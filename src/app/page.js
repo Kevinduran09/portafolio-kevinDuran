@@ -25,7 +25,7 @@ export default function Home() {
       <Section id={'home'} className={'pt-20 pb-8 md:py-0 '}>
         <Hero />
       </Section>
-      <Section id="projects" lgW={'max-w-5xl'}>
+      <Section id="projects" className={'lg:max-w-5xl'}>
         <Projects />
       </Section>
       <Section id="aboutme" className={'my-16'} >
