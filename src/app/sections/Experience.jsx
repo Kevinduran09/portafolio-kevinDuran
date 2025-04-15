@@ -13,9 +13,9 @@ export const Experience = () => {
             </h2>
             <div className=''>
                 <ol className="relative border-s-2 border-gray-700">
-                    {experience.map((education, index) => (
+                    {experience.sort((a,b)=>a.order - b.order).map((education, index) => (
                         <li className="mb-10 ms-6" key={index}>
-                            <ExperienceItem key={education.courseName} {...education} />
+                            <ExperienceItem key={education.title} {...education} />
                         </li>
                     ))}
                 </ol>

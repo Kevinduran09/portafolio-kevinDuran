@@ -11,7 +11,7 @@ import { data } from '../data/data';
 export const Hero = async () => {
 
   const { Personal_Information } = data;
-  
+
 
 
   return (
@@ -22,9 +22,9 @@ export const Hero = async () => {
         <Image
           priority
           fill
-          src='/KevinDuran.webp'
+          src='/kevin_duran.webp'
           alt="Kevin Durán"
-          className='object-contain rounded-full '
+          className='object-cover rounded-full'
         />
       </div>
 
@@ -36,7 +36,7 @@ export const Hero = async () => {
           Soy
           <span className="text-fuchsia-600"> {Personal_Information.name}</span>
         </h2>
-        <TypedText className={'text-4xl sm:text-4xl text-fuchsia-600'} datalist={Personal_Information.titles}/>
+        <TypedText className={'text-4xl sm:text-4xl text-fuchsia-600 text-wrap'} datalist={Personal_Information.titles} />
 
         <div className='flex flex-row py-2 mt-6 items-center gap-5 justify-center md:justify-between'>
           <div className='flex flex-row gap-3 items-center'>

@@ -9,8 +9,8 @@ export const ListItem = ({ title, icon, items }) => {
             </span>
             <ul className='flex flex-row flex-wrap gap-5 py-4'>
                 {items.map((item, index) => (
-                    <li key={item} className='flex items-center gap-2 px-3 py-1.5  bg-gray-800 rounded-full'>
-                        <span className='text-sm font-medium text-gray-300'>{item}</span>
+                    <li key={item} className='flex items-center gap-2 px-3 py-1.5  bg-gray-700 rounded-full'>
+                        <span className='text-base font-medium text-gray-100'>{item}</span>
                     </li>
                 ))}
             </ul>

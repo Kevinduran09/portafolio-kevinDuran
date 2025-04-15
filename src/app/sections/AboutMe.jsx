@@ -13,18 +13,18 @@ export default function AboutMe() {
             </h2>
 
             <div className='px-6'>
-                <p className='text-lg  leading-6 mb-4'>
-                    Soy Kevin Durán Martínez, estudiante de Ingeniería de software, apasionado por la Tecnologia. <span className='text-fuchsia-500'>Con experiencia en diversas tecnologías y lenguajes de programación.</span> Me gusta aprender y estar en constante crecimiento.
+                <p className='text-lg text-justify  leading-7 tracking-wider  mb-4'>
+                    Soy Kevin Andrey Durán Martínez, estudiante de ingeniería en sistemas de información y desarrollador de software. Apasionado por la tecnología y el desarrollo de soluciones tecnológicas. <span className='text-fuchsia-500'>Siempre en continuo aprendizaje buscando nuevos retos y oportunidades para mejorar mis conocimientos.</span>
                 </p>
-                <p className='text-lg  leading-6 mb-4'>
-                    Busco siempre nuevos retos y oportunidades para seguir creciendo y aprendiendo. <span className='text-fuchsia-500'>He participado en el desarrollo de software para MYPIMES CEMEDE.</span>
+                <p className='text-lg text-justify  leading-7  tracking-wider mb-4'>
+                    Cuento con experiencia en diversas tecnologías y herramientas de desarrollo de software que me permiten construir soluciones modernas y solidas. <span className='text-fuchsia-500'>Con experiencia en proyectos reales</span>, he participado en el desarrollo de MYPIMES, una aplicación para la organización CEMEDE que <span className='text-fuchsia-500'>soluciona una problemática ante el control de las pymes dentro del territorio de Costa Rica.  </span>
                 </p>
                 
                 <a
                   
                     className='flex items-center gap-2 p-2 bg-fuchsia-600 hover:bg-fuchsia-700 transition-all !duration-300 ease-in rounded-lg cursor-pointer my-6 w-fit'
                     href='Currículum Vitae CV Kevin Duran.pdf'
-                    // download={'CV-KevinDuran.pdf'}
+                    
                     target='_blank'
                 >
                     Descargar CV

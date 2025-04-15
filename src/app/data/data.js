@@ -13,6 +13,7 @@ export const data = {
     },
     projects: [
         {
+            order: 2,
             "name": "MYPIMES CEMEDE",
             "imageUrl": "/CEMEDE.webp",
             "description": "Proyecto realizado para la organizacion CEMEDE, el cual soluciona la necesidad de una aplicación web para la gestión de las MYPIMES.",
@@ -21,6 +22,7 @@ export const data = {
             github: ""
         },
         {
+            order: 3,
             name: 'Proyecto Remesas Yabi',
             imageUrl: "/MOONLIGHT.webp",
             description: "Yabi es una aplicación para gestionar personal, clientes, equipo de transporte y rutas de entrega en empresas de remesas, optimizando la logística y garantizando un servicio eficiente y puntual.",
@@ -31,14 +33,15 @@ export const data = {
             github: "https://github.com/Kevinduran09/RemesasYabi"
         },
         {
-            name: 'Moon Light Hotel',
-            imageUrl: "/MOONLIGHT.webp",
-            description: "Proyecto universitario, Aplicación web para un Hotel denomidado Moon Light Hotel, permite administrar y gestionar las habitaciones, tipos de habitaciones y reservaciones, desarrollado para el curso de programación.",
+            order:1,
+            name: 'VoluntHub',
+            imageUrl: "/VoluntHub-preview.webp",
+            description: "VoluntHub es una plataforma de voluntariado, su finalidad es incentivar en la comunidad la participación y colaboración en eventos o proyectos que ayuden a resolver problematicas presentes en la comunidad. En continuo desarrollo.",
             technologies: [
-                TAGS.Angular, TAGS.Laravel, TAGS.SqlServer
+                TAGS.React, TAGS.TailwindCSS
             ],
-           
-            github: 'https://github.com/Kevinduran09/Proyecto_Reservacion_Habitaciones'
+            demo:'https://volunthub-app.netlify.app/',
+            github: 'https://github.com/Kevinduran09/Plataforma-de-Voluntariado-para-Eventos'
         },
 
     ],
@@ -60,23 +63,42 @@ export const data = {
     ],
     experience: [
         {
-            courseName: "Ingenieria en sistemas de información",
+            order:1,
+            title: "Bachillerato en Ingenieria en Sistemas de Información",
             institution: "Universidad Nacional de Costa Rica",
-            description: "Carrera universitaria en sistemas de información con enfasis en el desarrollo de software y soluciones tecnologicas.",
-            date: "Diciembre, 2025",
+            description: "Grado de bachiller universitaria en la carrera de ingenieria en sistemas de información con enfasis en el desarrollo de software y soluciones tecnologicas.",
+            date: "Julio 2024 - Actualmente",
+            certificate:''
         },
         {
-            courseName: "Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero",
+            order: 2,
+            title: "Diplomado en Ingenieria en Sistemas de Información",
+            institution: "Universidad Nacional de Costa Rica",
+            description: "Grado de diplomado universitaria en la carrera de ingenieria en sistemas de información con enfasis en el desarrollo de software y soluciones tecnologicas.",
+            date: "Feb 2021 - Junio 2024",
+            certificate:'Certificado diplomado.jpg'
+        },
+        {
+            order: 4,
+            title:'Desarrollo de Aplicación Web',
+            institution:'Interfrutd Frutas Del Mundo S.A',
+            description: 'Participo en el desarrollo de una aplicación web para mejorar la visibilidad digital de la empresa y optimizar el servicio al cliente.La plataforma permite realizar pedidos en línea, compras de productos y registro de nuevos proveedores.',
+            date:'Febrero 2024 - Actualmente'
+        },
+        {
+            order: 5,
+            title: "Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero",
             institution: "Udemy",
-            description: "Curso online sobre desarrollo de software Frontend y Backend con tecnologías Javascript.",
-            date: "2023",
+            description: "Curso online sobre desarrollo de software Frontend y Backend con tecnologías como NodeJS, React, Javascript, HTML y CSS. Impartido por Nicolas Schurmann desarrollador de software y creador de contenido además de instructor en la plataforma de cursos UDEMY.",
+            date: "2025",
             certificate: 'Certificado Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero.jpg'
         },
         {
-            courseName: "Mypimes-CEMEDE",
-            institution: "CEMEDE",
-            description: "Desarrollo de un sistema para la aplicación y realización de cuestionarios personalizados, para CEMEDE Universidad Nacional.",
-            date: "2024",
+            order: 3,
+            title: "Desarrollo de MYPYMES",
+            institution: "Centro Mesoamericano de Desarrollo Sostenible del Trópico seco(CEMEDE)",
+            description: "Desarrollé una app web para gestión de pymes, con registro de empresas, formularios personalizados y asignación de usuarios. La solución permite recolectar y visualizar información clave mediante encuestas dinámicas",
+            date: "Febrero 2024 - Diciembre 2024",
         }
     ]
 
