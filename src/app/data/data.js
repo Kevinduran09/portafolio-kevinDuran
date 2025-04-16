@@ -24,7 +24,7 @@ export const data = {
         {
             order: 3,
             name: 'Proyecto Remesas Yabi',
-            imageUrl: "/MOONLIGHT.webp",
+            imageUrl: "/Yabi_captura.webp",
             description: "Yabi es una aplicación para gestionar personal, clientes, equipo de transporte y rutas de entrega en empresas de remesas, optimizando la logística y garantizando un servicio eficiente y puntual.",
             technologies: [
                 TAGS.React, TAGS.Laravel, TAGS.SqlServer

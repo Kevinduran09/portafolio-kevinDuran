@@ -26,7 +26,7 @@ export const Projects = () => {
                 spaceBetween={30}
                 slidesPerView={1}
             
-                autoplay={{ delay: 4000, disableOnInteraction: false }}
+                autoplay={{ delay: 7000, disableOnInteraction: false }}
                 pagination={{ clickable: true }}
                 grabCursor={true}
                 
